@@ -10,7 +10,7 @@ struct ContentView: View {
     }
 }
 
-// Твои задачи
+
 func runAll() {
     problem1_FizzBuzz()
     problem2_Primes()
@@ -204,9 +204,7 @@ func problem10_UniqueChars() {
     print("Hello:", hasUniqueCharacters("Hello")) // false
 }
 
-// -------------------------
-// Main – запускаем все задачи
-// -------------------------
+------------------------
 
 
 
