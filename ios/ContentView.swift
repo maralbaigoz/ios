@@ -1,14 +1,6 @@
-import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        // Покажем lifeStory прямо на экране приложения
-        Text(lifeStory)
-            .padding()
-    }
-}
+import Foundation
 
-// Твои переменные
 var firstName: String = "Maral"
 var lastName: String = "Baigoz"
 var birthYear: Int = 2005
@@ -38,6 +30,4 @@ I have \(numberOfHobbies) hobbies in total, and my favorite number is \(favorite
 \(futureGoals)
 """
 
-#Preview {
-    ContentView()
-}
+print(lifeStory)
