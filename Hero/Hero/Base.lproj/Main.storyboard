@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hero" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVi-Uw-8bO">
+                                <rect key="frame" x="0.0" y="59" width="430" height="787"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-Es-WyK">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="747"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QxG-e8-UzX">
+                                                <rect key="frame" x="20" y="20" width="390" height="707"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YyN-kJ-9b3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="280"/>
+                                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="280" id="6XW-0H-4kX"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Superhero Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5SL-0N-cC3">
+                                                        <rect key="frame" x="0.0" y="296" width="390" height="41.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" text="Alias or identity" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1V-Lw-oWn">
+                                                        <rect key="frame" x="0.0" y="353.5" width="390" height="22"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3zB-8Q-bAF">
+                                                        <rect key="frame" x="0.0" y="391.5" width="390" height="0.0"/>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="Tap the button to meet a hero!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KaP-7e-ibP">
+                                                        <rect key="frame" x="0.0" y="407.5" width="390" height="67.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Featured Heroes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="1" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6h5-Yv-3SJ">
+                                                        <rect key="frame" x="0.0" y="491" width="390" height="20.5"/>
+                                                        <fontDescription style="UICTFontTextStyleHeadline"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pPX-3y-7KR">
+                                                        <rect key="frame" x="0.0" y="519.5" width="390" height="40"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jN-na-xiJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="124" height="40"/>
+                                                                <state key="normal" title="Spider-Man"/>
+                                                                <connections>
+                                                                    <action selector="featuredHeroTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHt-p9-YJX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYS-6C-2dP">
+                                                                <rect key="frame" x="132.5" y="0.0" width="125" height="40"/>
+                                                                <state key="normal" title="Hulk"/>
+                                                                <connections>
+                                                                    <action selector="featuredHeroTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2JZ-5o-X8i"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5S1-UW-qjV">
+                                                                <rect key="frame" x="265" y="0.0" width="125" height="40"/>
+                                                                <state key="normal" title="Thor"/>
+                                                                <connections>
+                                                                    <action selector="featuredHeroTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kk-PM-hNg"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hh-nK-Xul">
+                                                        <rect key="frame" x="0.0" y="567.5" width="390" height="139"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="QxG-e8-UzX" secondAttribute="bottom" constant="20" id="6xC-cZ-kkP"/>
+                                            <constraint firstItem="QxG-e8-UzX" firstAttribute="top" secondItem="n4D-Es-WyK" secondAttribute="top" constant="20" id="dBt-Db-p2m"/>
+                                            <constraint firstAttribute="trailing" secondItem="QxG-e8-UzX" secondAttribute="trailing" constant="20" id="mZM-E5-NAA"/>
+                                            <constraint firstItem="QxG-e8-UzX" firstAttribute="leading" secondItem="n4D-Es-WyK" secondAttribute="leading" constant="20" id="yK6-UW-fX7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="n4D-Es-WyK" firstAttribute="width" secondItem="kVi-Uw-8bO" secondAttribute="width" id="5Sg-UX-ZWw"/>
+                                    <constraint firstItem="n4D-Es-WyK" firstAttribute="top" secondItem="kVi-Uw-8bO" secondAttribute="top" id="BQE-XF-9kZ"/>
+                                    <constraint firstItem="n4D-Es-WyK" firstAttribute="bottom" secondItem="kVi-Uw-8bO" secondAttribute="bottom" id="Rxe-J9-M0T"/>
+                                    <constraint firstItem="n4D-Es-WyK" firstAttribute="leading" secondItem="kVi-Uw-8bO" secondAttribute="leading" id="VTN-6q-OGP"/>
+                                    <constraint firstItem="n4D-Es-WyK" firstAttribute="trailing" secondItem="kVi-Uw-8bO" secondAttribute="trailing" id="eHw-zE-Q4p"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg2-wl-Zw1">
+                                <rect key="frame" x="20" y="862" width="390" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="d4I-eh-syq"/>
+                                </constraints>
+                                <state key="normal" title="Randomize Superhero"/>
+                                <connections>
+                                    <action selector="randomizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TYc-jx-V29"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="U9W-vi-9kE">
+                                <rect key="frame" x="205" y="443" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kVi-Uw-8bO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0Lp-ra-50k"/>
+                            <constraint firstItem="kVi-Uw-8bO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6ve-0f-f2j"/>
+                            <constraint firstAttribute="trailing" secondItem="kVi-Uw-8bO" secondAttribute="trailing" id="JzB-U3-uJ6"/>
+                            <constraint firstItem="Rg2-wl-Zw1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fc8-bF-xjg"/>
+                            <constraint firstAttribute="trailing" secondItem="Rg2-wl-Zw1" secondAttribute="trailing" constant="20" id="i02-jh-EZN"/>
+                            <constraint firstItem="Rg2-wl-Zw1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="pJ9-ay-B8f"/>
+                            <constraint firstItem="kVi-Uw-8bO" firstAttribute="bottom" secondItem="Rg2-wl-Zw1" secondAttribute="top" constant="-16" id="plV-BI-fm8"/>
+                            <constraint firstItem="U9W-vi-9kE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x2A-YM-jV8"/>
+                            <constraint firstItem="U9W-vi-9kE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yhZ-az-xB6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="U9W-vi-9kE" id="R6p-yB-7KL"/>
+                        <outlet property="attributeStack" destination="3zB-8Q-bAF" id="UKt-Rg-Rw6"/>
+                        <outlet property="contentStack" destination="QxG-e8-UzX" id="TP4-fu-EZx"/>
+                        <outlet property="heroImageView" destination="YyN-kJ-9b3" id="ktk-74-uY6"/>
+                        <outlet property="nameLabel" destination="5SL-0N-cC3" id="UFU-77-zHe"/>
+                        <outlet property="randomizeButton" destination="Rg2-wl-Zw1" id="jtv-xJ-oFi"/>
+                        <outlet property="scrollView" destination="kVi-Uw-8bO" id="CQq-jI-ZSl"/>
+                        <outlet property="statusLabel" destination="KaP-7e-ibP" id="Pkk-vb-0HC"/>
+                        <outlet property="featuredLabel" destination="6h5-Yv-3SJ" id="fDx-vi-CbC"/>
+                        <outletCollection property="featuredButtons" destination="2jN-na-xiJ" collectionClass="NSMutableArray" id="8s5-Ed-rSu"/>
+                        <outletCollection property="featuredButtons" destination="kYS-6C-2dP" collectionClass="NSMutableArray" id="9GY-PD-MkV"/>
+                        <outletCollection property="featuredButtons" destination="5S1-UW-qjV" collectionClass="NSMutableArray" id="kLh-Uw-vWF"/>
+                        <outlet property="subtitleLabel" destination="Z1V-Lw-oWn" id="G4N-vk-Kik"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
